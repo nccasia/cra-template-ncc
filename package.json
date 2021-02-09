@@ -1,5 +1,5 @@
 {
-  "name": "cra-template-redux-typescript",
+  "name": "cra-template-ncc",
   "version": "1.0.1",
   "scripts": {
     "prettify": "prettier --write './template/src/**/*.{ts,tsx}'",
@@ -16,18 +16,18 @@
     "reduxjs",
     "react-redux"
   ],
-  "description": "The official Redux+TS template for Create React App",
+  "description": "The official ncc template for Create React App",
   "main": "template.json",
   "repository": {
     "type": "git",
-    "url": "https://github.com/reduxjs/cra-template-redux-typescript.git"
+    "url": "https://github.com/nccasia/cra-template-ncc.git"
   },
   "license": "MIT",
   "engines": {
     "node": ">=8.10"
   },
   "bugs": {
-    "url": "https://github.com/reduxjs/cra-template-redux-typescript/issues"
+    "url": "https://github.com/nccasia/cra-template-ncc/issues"
   },
   "files": [
     "template",
