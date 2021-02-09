@@ -7,11 +7,11 @@ To use this template, add `--template ncc` when creating a new app.
 For example:
 
 ```sh
-npx create-react-app my-app --template ncc
+npx create-react-app my-app --template git+https://github.com/nccasia/cra-template-ncc.git
 
 # or
 
-yarn create react-app my-app --template ncc
+yarn create react-app my-app --template git+https://github.com/nccasia/cra-template-ncc.git
 ```
 
 For more information, please refer to:
