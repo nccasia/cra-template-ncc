@@ -1,39 +1,34 @@
-import React, { Suspense } from "react";
-import Theme from "./components/Theme";
-import App from "./app/App";
-import { Provider as ReduxProvider } from "react-redux";
-import { ToastProvider } from "./components/Toasts";
-import { AppConfigProvider } from "./components/AppConfig";
-import { AuthProvider } from "./utils/auth/AuthContext";
-import { HotkeyStorageProvider } from "./components/HotkeyStorage";
-import AppErrorBoundary from "./components/AppErrorBoundary";
+import React, { Suspense } from 'react';
+import Theme from '../components/Theme';
+import App from './App';
+import { Provider as ReduxProvider } from 'react-redux';
+import { ToastProvider } from '../components/Toasts';
+import { AppConfigProvider } from '../components/AppConfig';
+import { AuthProvider } from '../core/auth/AuthContext';
+import AppErrorBoundary from '../components/AppErrorBoundary';
 
-import Loading from "./components/Loading";
+import Loading from '../components/Loading';
 
-import configureStore from "./redux/configureStore";
-
-const store = configureStore();
+import { store } from '../core/redux/store';
 
 // Importing Internalization file
-import "./i18n";
+import './i18n';
 
 export const AppWithContexts = () => {
   return (
     <AppErrorBoundary>
       <ReduxProvider store={store}>
-        <Suspense fallback={Loading}>
-          <Theme>
-            <AppConfigProvider>
+        <AppConfigProvider>
+          <Suspense fallback={Loading}>
+            <Theme>
               <AuthProvider>
                 <ToastProvider>
-                  <HotkeyStorageProvider>
-                    <App />
-                  </HotkeyStorageProvider>
+                  <App />
                 </ToastProvider>
               </AuthProvider>
-            </AppConfigProvider>
-          </Theme>
-        </Suspense>
+            </Theme>
+          </Suspense>
+        </AppConfigProvider>
       </ReduxProvider>
     </AppErrorBoundary>
   );

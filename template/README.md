@@ -18,17 +18,49 @@ You will also see any lint errors in the console.
 
 ### Debugging
 
+### Styling 
+
+#### css
+
+#### SASS/LESS
+
 ### Routing
+
+#### Fallback
+
+#### Redirect
+
+#### Conditional Routing
+
+#### Custom layout routing
 
 ### Configuration
 
+#### Static configuration
+
+#### Dynamic configuration
+
 ### International
+
+#### Adding translation
+
+#### Adding languages
 
 ### Adding features
 
 ### Access Control
 
+#### role based access control
+
+#### Conditional block
+
+#### Page access Control 
+
 ### Theming
+
+#### Define theme
+
+#### Define mixin
 
 ### Layout
 
@@ -38,7 +70,22 @@ You will also see any lint errors in the console.
 
 ### UI frameworks
 
+### Ant Design
+
+#### Custom 
+
 ### Testing
+
+#### Unit testing
+
+#### Integration testing
+
+#### End to End testing
+#### UI Testing 
+
+### Releasing
+
+### Deployment
 
 ### `npm test`
 
